@@ -1,8 +1,4 @@
-import java.util.ArrayList;
-import java.util.Date;
-
 public class StudentsList {
-    //private ArrayList<Student> studentList = new ArrayList<>();
     private Student[] studentList = new Student[5];
     int count = 0;
 
@@ -19,8 +15,9 @@ public class StudentsList {
             }
         }
     }
-    public void sortByFacultyCourse(String faculty, int course){
-        for(Student student : studentList) {
+
+    public void sortByFacultyCourse(String faculty, int course) {
+        for (Student student : studentList) {
             if (student != null) {
                 if (faculty.equalsIgnoreCase(student.getFaculty()) && student.getCourse() == course)
                     System.out.println(student.toString());
@@ -37,7 +34,7 @@ public class StudentsList {
         }
     }
 
-    public  void sortByGroup(String group) {
+    public void sortByGroup(String group) {
         for (Student student : studentList) {
             if (student != null) {
                 if (group.equalsIgnoreCase(student.getGroup()))
@@ -45,7 +42,5 @@ public class StudentsList {
             }
         }
     }
-
-
-        }
+}
 

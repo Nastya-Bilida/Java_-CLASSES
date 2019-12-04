@@ -1,10 +1,8 @@
-import java.util.ArrayList;
 import java.util.Date;
 
 public class Student {
     private static int idStudent = 1;
     private int id = idStudent++;
-
     private String surname;
     private String name;
     private String patronymic;
@@ -31,31 +29,31 @@ public class Student {
         return id;
     }
 
-    public String getSurname(){
-        return  surname;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setSurname(String surname){
+    public void setSurname(String surname) {
         this.surname = surname;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public String getPatronymic(){
+    public String getPatronymic() {
         return patronymic;
     }
 
-    public void setPatronymic(String patronymic){
+    public void setPatronymic(String patronymic) {
         this.patronymic = patronymic;
     }
 
-    public Date getBirthday(){
+    public Date getBirthday() {
         return birthday;
     }
 
@@ -63,7 +61,7 @@ public class Student {
         this.birthday.setYear(birthday);
     }
 
-    public String getAddress(){
+    public String getAddress() {
         return address;
     }
 
@@ -91,7 +89,6 @@ public class Student {
         return course;
     }
 
-
     public void setCourse(int course) {
         this.course = course;
     }
@@ -104,10 +101,7 @@ public class Student {
         this.group = group;
     }
 
-
-    public String toString(){
+    public String toString() {
         return getId() + " " + getSurname() + " " + getName() + " " + getPatronymic() + " " + getFaculty();
     }
-
-
 }
